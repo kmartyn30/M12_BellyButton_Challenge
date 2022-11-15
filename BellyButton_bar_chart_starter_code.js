@@ -97,5 +97,28 @@ function buildCharts(sample) {
   });
 }
 
+data.sort (function(a,b) {
+    return parseFloat(b.OTUSearchResults) - parseFloat(a.OTUSearchResults);
+});
+//Slice the first 10 objects for plotting
+data=data.slice(0,10);
 
+//Reverse the array due to Plotly's defaults
+data = data.reverse();
+
+//Trace1 for the OTU Data
+var trace1 = {
+    x:data.map(row=> row.OTUSearchResults),
+    y:data.map(row=> row.OTUDearchResultsID);
+    text: data.map(row => row.OTUID);
+    Ethnicity: ""
+    gender: "F, M"
+    DBType: ""
+    wfreq:""
+
+}  
+
+
+
+}
   
