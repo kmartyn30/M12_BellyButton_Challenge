@@ -115,10 +115,3 @@ function buildCharts(sample) {
     //gender: "F, M"
     //DBType: ""
     //wfreq:""
-
-}  
-
-
-
-}
-  
