@@ -85,36 +85,36 @@ function buildCharts(sample) {
       type:"bar",
       text: labels   
     }];
-    ];
+    
     // 9. Create the layout for the bar chart. 
     var barLayout = {
      title: "Top Ten Bacteria Cultures Found"
     };
-    };
+    
     // 10. Use Plotly to plot the data with the layout. 
      Plotly.newPlot("bar", barData,barLayout);
  
   });
 }
 
-data.sort (function(a,b) {
-    return parseFloat(b.OTUSearchResults) - parseFloat(a.OTUSearchResults);
-});
+//data.sort (function(a,b) {
+  //  return parseFloat(b.OTUSearchResults) - parseFloat(a.OTUSearchResults);
+//});
 //Slice the first 10 objects for plotting
-data=data.slice(0,10);
+//data=data.slice(0,10);
 
 //Reverse the array due to Plotly's defaults
-data = data.reverse();
+//data = data.reverse();
 
 //Trace1 for the OTU Data
-var trace1 = {
-    x:data.map(row=> row.OTUSearchResults),
-    y:data.map(row=> row.OTUDearchResultsID);
-    text: data.map(row => row.OTUID);
-    Ethnicity: ""
-    gender: "F, M"
-    DBType: ""
-    wfreq:""
+//var trace1 = {
+  //  x:data.map(row=> row.OTUSearchResults),
+    //y:data.map(row=> row.OTUDearchResultsID);
+    //text: data.map(row => row.OTUID);
+    //Ethnicity: ""
+    //gender: "F, M"
+    //DBType: ""
+    //wfreq:""
 
 }  
 
